@@ -12,7 +12,7 @@ for (pkg in bioc_pkgs) {
     suppressPackageStartupMessages(library(pkg, character.only = TRUE))
 }
 
-setwd("Your Own")
+setwd("Your Own Pathway")
 
 # --- Load full Limma results ------------------------------------------------
 results <- read.csv("limma_all_results.csv", check.names = FALSE)
