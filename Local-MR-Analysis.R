@@ -8,7 +8,7 @@ library(dplyr)
 library(purrr)
 
 # Set working directory (optional, does not affect subfolder reading)
-setwd("C:/Users/xieru/Desktop/ADHD")
+setwd("C:/Users/xieru/Desktop/PEandADHD")
 
 ##############################
 ####### Process Exposure Data in Batches ######
