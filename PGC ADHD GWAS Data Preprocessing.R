@@ -7,7 +7,7 @@ work_dir <- "C:/Users/xieru/Desktop/PEandADHD"  # Use forward slashes for cross-
 setwd(work_dir)
 
 # --- 2. Load Raw Data --------------------------------------------------------
-raw_file <- "PGC.ASD.euro.all.25Mar2015.txt"
+raw_file <- "ADHD2022_iPSYCH_deCODE_PGC.meta.gz"
 
 if (!file.exists(raw_file)) {
   stop("Raw data file not found: ", file.path(work_dir, raw_file))
@@ -91,7 +91,7 @@ cat("P-value range:", format(min(outcome_data$pval.outcome, na.rm = TRUE), digit
 cat("EAF missing rate:", round(sum(is.na(outcome_data$eaf.outcome)) / nrow(outcome_data) * 100, 2), "%\n")
 
 # --- 7. Save Results ---------------------------------------------------------
-output_file <- "outcome_data.txt"
+output_file <- "ADHD_MRdata.txt"
 write.table(
   outcome_data,
   file      = output_file,
